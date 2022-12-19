@@ -1,0 +1,41 @@
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .picture {
+    width: 400px;
+    padding: 1rem;
+    p {
+      display: flex;
+      color: rgb(79, 77, 77);
+      h3 {
+        
+        a {
+          color: rgb(79, 77, 77);;
+          &:hover {
+              color: rgb(120, 126, 126);
+              transition: all 0.2s ease;
+            }
+        }
+      }
+    }
+    p.photographer {
+      justify-content: end;
+    }
+    .imageContainer {
+      overflow: hidden;
+      height: 40vh;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+        object-fit: cover;
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+    }
+  }
+}

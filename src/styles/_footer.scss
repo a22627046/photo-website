@@ -1,0 +1,40 @@
+.footer {
+  background-color: #f2f4f8;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  .links {
+    margin-top: 2.5rem;
+    a {
+      margin: 2rem;
+
+      img.normal, img#special {
+        &:hover {
+          opacity: 0.75;
+          transition: all 0.3s ease;
+          scale: (1.5);
+        }
+      }
+
+      img.normal {
+          width: 2vw;
+          height: 2vw;
+        }
+      
+        img#special {
+          width: 2.8vw;
+          height: 2vw;
+        }
+    }
+  }
+  .copyright {
+    margin: 2.25rem;
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+    color: rgb(71, 70, 70);
+    font-weight: bolder;
+  }
+}
