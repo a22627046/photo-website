@@ -4,10 +4,10 @@ const About = () => {
   return (
     <div style={{ minHeight: "100vh" }}>
       <div className="reactIcon">
-        <img src="./icons/react.png" alt="react" />
+        <img src={[require("../assets/react.png")]} alt="react" />
       </div>
       <div className="codingIcon">
-        <img src="./icons/coding.png" alt="coding" />
+        <img src={[require("../assets/coding.png")]} alt="coding" />
       </div>
       <div className="about">
         <p>
